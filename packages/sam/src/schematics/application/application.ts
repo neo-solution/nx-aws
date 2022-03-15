@@ -37,7 +37,7 @@ function updateWorkspaceJson(options: NormalizedSchema): Rule {
         const project: { architect: Architect } =
             workspaceJson.projects[options.name];
 
-        project.architect.build.builder = '@nx-aws/sam:build';
+        project.architect.build.builder = '@neo-solution/nx-aws-sam:build';
         project.architect.build.options = {
             ...project.architect.build.options,
             template: `${options.appProjectRoot}/src/template.yaml`,
@@ -46,7 +46,7 @@ function updateWorkspaceJson(options: NormalizedSchema): Rule {
         };
 
         project.architect.serve = {
-            builder: '@nx-aws/sam:execute',
+            builder: '@neo-solution/nx-aws-sam:execute',
             options: {
                 buildTarget: `${options.name}:build`,
                 packageTarget: `${options.name}:package`,
@@ -54,7 +54,7 @@ function updateWorkspaceJson(options: NormalizedSchema): Rule {
         };
 
         project.architect.package = {
-            builder: '@nx-aws/sam:package',
+            builder: '@neo-solution/nx-aws-sam:package',
             options: {
                 templateFile: `${options.appProjectRoot}/src/template.yaml`,
                 outputTemplateFile: `dist/${options.appProjectRoot}/serverless-output.yaml`,
@@ -66,7 +66,7 @@ function updateWorkspaceJson(options: NormalizedSchema): Rule {
         };
 
         project.architect.deploy = {
-            builder: '@nx-aws/sam:deploy',
+            builder: '@neo-solution/nx-aws-sam:deploy',
             options: {
                 templateFile: `dist/${options.appProjectRoot}/serverless-output.yaml`,
                 s3Prefix: `${options.appProjectRoot}`,

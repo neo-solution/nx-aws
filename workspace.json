@@ -31,7 +31,7 @@
                 "build": {
                     "builder": "@nrwl/node:package",
                     "options": {
-                        "outputPath": "dist/packages/core",
+                        "outputPath": "dist/packages/nx-aws-core",
                         "tsConfig": "packages/core/tsconfig.lib.json",
                         "packageJson": "packages/core/package.json",
                         "main": "packages/core/src/index.ts",
@@ -63,10 +63,10 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/core --destDir dist/packages/core"
+                                "command": "npx monorepo-package-tool --rootModuleDir packages/core --destDir dist/packages/nx-aws-core"
                             },
                             {
-                                "command": "npm publish dist/packages/core --access public --tag $NPM_TAG"
+                                "command": "npm publish dist/packages/nx-aws-core --access public --tag $NPM_TAG"
                             }
                         ]
                     }
@@ -77,10 +77,10 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/core --destDir dist/packages/core"
+                                "command": "npx monorepo-package-tool --rootModuleDir packages/core --destDir dist/packages/nx-aws-core"
                             },
                             {
-                                "command": "npm pack dist/packages/core"
+                                "command": "npm pack dist/packages/nx-aws-core"
                             }
                         ]
                     }
@@ -117,7 +117,7 @@
                 "build": {
                     "builder": "@nrwl/node:package",
                     "options": {
-                        "outputPath": "dist/packages/s3",
+                        "outputPath": "dist/packages/nx-aws-s3",
                         "tsConfig": "packages/s3/tsconfig.lib.json",
                         "packageJson": "packages/s3/package.json",
                         "main": "packages/s3/src/index.ts",
@@ -149,10 +149,10 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/s3 --destDir dist/packages/s3"
+                                "command": "npx monorepo-package-tool --rootModuleDir packages/s3 --destDir dist/packages/nx-aws-s3"
                             },
                             {
-                                "command": "npm publish dist/packages/s3 --access public --tag $NPM_TAG"
+                                "command": "npm publish dist/packages/nx-aws-s3 --access public --tag $NPM_TAG"
                             }
                         ]
                     }
@@ -163,10 +163,10 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/s3 --destDir dist/packages/s3"
+                                "command": "npx monorepo-package-tool --rootModuleDir packages/s3 --destDir dist/packages/nx-aws-s3"
                             },
                             {
-                                "command": "npm pack dist/packages/s3"
+                                "command": "npm pack dist/packages/nx-aws-s3"
                             }
                         ]
                     }
@@ -182,8 +182,8 @@
                     "builder": "@nrwl/nx-plugin:e2e",
                     "options": {
                         "target": "s3:build",
-                        "npmPackageName": "@nx-aws/s3",
-                        "pluginOutputPath": "dist/packages/s3",
+                        "npmPackageName": "@neo-solution/nx-aws-s3",
+                        "pluginOutputPath": "dist/packages/nx-aws-s3",
                         "jestConfig": "e2e/s3-e2e/jest.config.js"
                     }
                 }
@@ -219,7 +219,7 @@
                 "build": {
                     "builder": "@nrwl/node:package",
                     "options": {
-                        "outputPath": "dist/packages/sam",
+                        "outputPath": "dist/packages/nx-aws-sam",
                         "tsConfig": "packages/sam/tsconfig.lib.json",
                         "packageJson": "packages/sam/package.json",
                         "main": "packages/sam/src/index.ts",
@@ -251,10 +251,10 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/sam --destDir dist/packages/sam"
+                                "command": "npx monorepo-package-tool --rootModuleDir packages/sam --destDir dist/packages/nx-aws-sam"
                             },
                             {
-                                "command": "npm publish dist/packages/sam --access public --tag $NPM_TAG"
+                                "command": "npm publish dist/packages/nx-aws-sam --access public --tag $NPM_TAG"
                             }
                         ]
                     }
@@ -265,10 +265,10 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/sam --destDir dist/packages/sam"
+                                "command": "npx monorepo-package-tool --rootModuleDir packages/sam --destDir dist/packages/nx-aws-sam"
                             },
                             {
-                                "command": "npm pack dist/packages/sam"
+                                "command": "npm pack dist/packages/nx-aws-sam"
                             }
                         ]
                     }
@@ -284,8 +284,8 @@
                     "builder": "@nrwl/nx-plugin:e2e",
                     "options": {
                         "target": "sam:build",
-                        "npmPackageName": "@nx-aws/sam",
-                        "pluginOutputPath": "dist/packages/sam",
+                        "npmPackageName": "@neo-solution/nx-aws-sam",
+                        "pluginOutputPath": "dist/packages/nx-aws-sam",
                         "jestConfig": "e2e/sam-e2e/jest.config.js"
                     }
                 }

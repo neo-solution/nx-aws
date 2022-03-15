@@ -7,7 +7,7 @@ import {
     ImportStackOutput,
     ImportStackOutputs,
     importDotenv,
-} from '@nx-aws/core';
+} from '@neo-solution/nx-aws-core';
 import { writeFileSync } from 'fs';
 import { resolve } from 'path';
 

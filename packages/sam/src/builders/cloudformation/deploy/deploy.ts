@@ -6,7 +6,7 @@ import {
     ImportStackOutputs,
     formatStackName,
     importDotenv,
-} from '@nx-aws/core';
+} from '@neo-solution/nx-aws-core';
 import { IParameterOverrides } from './IParameterOverrides';
 import { getParameterOverrides } from '../../../utils/getParameterOverrides';
 

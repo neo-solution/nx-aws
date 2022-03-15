@@ -1,4 +1,4 @@
-# @nx-aws/sam
+# @neo-solution/nx-aws-sam
 
 [Angular CLI](https://cli.angular.io) Builders for [AWS SAM](https://aws.amazon.com/serverless/sam/) projects,
 designed for use alongside [nx](https://nx.dev)
@@ -11,20 +11,20 @@ However, what if your backend uses SAM?
 
 This project includes builders for that!
 
--   @nx-aws/sam:build - builds your functions
--   @nx-aws/sam:package - packages your SAM (ie. CloudFormation) template ready for deployment
+-   @neo-solution/nx-aws-sam:build - builds your functions
+-   @neo-solution/nx-aws-sam:package - packages your SAM (ie. CloudFormation) template ready for deployment
     (including resolving AWS::Serverless::Application references to other apps in your monorepo)
--   @nx-aws/sam:deploy - deploys your CloudFormation template
+-   @neo-solution/nx-aws-sam:deploy - deploys your CloudFormation template
 
 ## Get started
 
 **NB: nx-aws 0.10.0 and higher require @nrwl/nx v11 and @angular-devkit/core v11.**
 
 1. Open your existing workspace or run `npx create-nx-workspace` to create a new workspace
-1. `npm install @nx-aws/sam` or `yarn add @nx-aws/sam`
-1. `nx g @nx-aws/sam:app api [--frontendProject sample]`
+1. `npm install @neo-solution/nx-aws-sam` or `yarn add @neo-solution/nx-aws-sam`
+1. `nx g @neo-solution/nx-aws-sam:app api [--frontendProject sample]`
 
-## @nx-aws/sam:build
+## @neo-solution/nx-aws-sam:build
 
 Add the following to your `angular.json`
 
@@ -38,7 +38,7 @@ Add the following to your `angular.json`
         "schematics": {},
         "architect": {
             "build": {
-                "builder": "@nx-aws/sam:build",
+                "builder": "@neo-solution/nx-aws-sam:build",
                 "options": {
                     "outputPath": "dist/apps/api",
                     "template": "apps/api/template.yaml",
@@ -97,7 +97,7 @@ That said, if you've got a layer defined like this:
 Then during `serve` or `build` nx-aws will simply map the `ContentUri` to an absolute path. Assuming you've got a
 layer at that location that `sam-cli` is happy with, then you're good to go.
 
-## @nx-aws/sam:package
+## @neo-solution/nx-aws-sam:package
 
 Add the following to your `angular.json`:
 
@@ -111,7 +111,7 @@ Add the following to your `angular.json`:
         "schematics": {},
         "architect": {
             "package": {
-                "builder": "@nx-aws/sam:package",
+                "builder": "@neo-solution/nx-aws-sam:package",
                 "options": {
                     "templateFile": "apps/api/template.yaml",
                     "outputTemplateFile": "dist/apps/api/serverless-output.yaml",
@@ -169,7 +169,7 @@ Add the following to `angular.json`:
         "architect": {
             ...
             "deploy": {
-                "builder": "@nx-aws/sam:deploy",
+                "builder": "@neo-solution/nx-aws-sam:deploy",
                 "options": {
                     "templateFile": "dist/apps/api/serverless-output.yaml",
                     "s3Prefix": "api",

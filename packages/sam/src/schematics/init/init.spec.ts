@@ -15,15 +15,15 @@ describe('init', () => {
         const result = await runSchematic('init', {}, tree);
         const packageJson = readJsonInTree(result, 'package.json');
 
-        expect(packageJson.dependencies['@nx-aws/sam']).toBeUndefined();
-        expect(packageJson.devDependencies['@nx-aws/sam']).toBeDefined();
+        expect(packageJson.dependencies['@neo-solution/nx-aws-sam']).toBeUndefined();
+        expect(packageJson.devDependencies['@neo-solution/nx-aws-sam']).toBeDefined();
     });
 
     describe('defaultCollection', () => {
         it('should be set if none was set before', async () => {
             const result = await runSchematic('init', {}, tree);
             const workspaceJson = readJsonInTree(result, 'workspace.json');
-            expect(workspaceJson.cli.defaultCollection).toEqual('@nx-aws/sam');
+            expect(workspaceJson.cli.defaultCollection).toEqual('@neo-solution/nx-aws-sam');
         });
     });
 

@@ -1,6 +1,6 @@
 {
-    "name": "@nx-aws/core",
-    "description": "Core of @nx-aws",
+    "name": "@neo-solution/nx-aws-core",
+    "description": "Core of @neo-solution/nx-aws",
     "keywords": [
         "AWS",
         "Serverless",

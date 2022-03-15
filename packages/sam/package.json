@@ -1,5 +1,5 @@
 {
-    "name": "@nx-aws/sam",
+    "name": "@neo-solution/nx-aws-sam",
     "version": "0.13.0",
     "main": "src/index.js",
     "schematics": "./collection.json",

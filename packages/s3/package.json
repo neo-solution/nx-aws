@@ -1,5 +1,5 @@
 {
-    "name": "@nx-aws/s3",
+    "name": "@neo-solution/nx-aws-s3",
     "version": "0.13.0",
     "description": "AWS S3 plugin for nx - for deploying static resources to S3",
     "keywords": [

@@ -1,5 +1,5 @@
 import { Observable, of, from } from 'rxjs';
-import { formatStackName } from '@nx-aws/core';
+import { formatStackName } from '@neo-solution/nx-aws-core';
 import { loadEnvironmentVariablesForStackLambdas } from './loadEnvironmentVariablesForStackLambdas';
 
 export function loadEnvFromStack(

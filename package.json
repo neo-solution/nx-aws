@@ -101,9 +101,9 @@
         "webpack": "4",
         "yargs": "^16.2.0"
     },
-    "repository": "https://github.com/studds/nx-aws",
+    "repository": "https://github.com/neo-solution/nx-aws",
     "publishConfig": {
-        "registry": "https://registry.npmjs.org/"
+        "registry": "https://npm.pkg.github.com/"
     },
     "engines": {
         "npm": "please-use-yarn",

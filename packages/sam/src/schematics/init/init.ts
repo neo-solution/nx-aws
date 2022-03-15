@@ -11,21 +11,21 @@ import { Schema } from './schema';
 export const updateDependencies = addDepsToPackageJson(
     {},
     {
-        '@nx-aws/sam': '*',
+        '@neo-solution/nx-aws-sam': '*',
     }
 );
 
 function moveDependency(): Rule {
     return updateJsonInTree('package.json', (json) => {
         json.dependencies = json.dependencies || {};
-        delete json.dependencies['@nx-aws/sam'];
+        delete json.dependencies['@neo-solution/nx-aws-sam'];
         return json;
     });
 }
 
 export default function (schema: Schema): Rule {
     return chain([
-        setDefaultCollection('@nx-aws/sam'),
+        setDefaultCollection('@neo-solution/nx-aws-sam'),
         addPackageWithInit('@nrwl/node', schema),
         schema.unitTestRunner === 'jest'
             ? addPackageWithInit('@nrwl/jest')

@@ -6,7 +6,7 @@
         "init": {
             "factory": "./src/schematics/init/init",
             "schema": "./src/schematics/init/schema.json",
-            "description": "Initialize the @nx-aws/sam plugin",
+            "description": "Initialize the @neo-solution/nx-aws-sam plugin",
             "aliases": ["ng-add"],
             "hidden": true
         },

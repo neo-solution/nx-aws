@@ -10,7 +10,7 @@ describe('s3 schematic', () => {
   const options: S3SchematicSchema = { name: 'test' };
 
   const testRunner = new SchematicTestRunner(
-    '@nx-aws/s3',
+    '@neo-solution/nx-aws-s3',
     join(__dirname, '../../../collection.json')
   );
 

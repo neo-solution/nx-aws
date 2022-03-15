@@ -16,7 +16,7 @@ import { runSam } from './run-sam';
 import { JsonObject } from '@angular-devkit/core';
 import { getFinalTemplateLocation } from '../cloudformation/get-final-template-location';
 import { watch, writeFileSync } from 'fs';
-import { getValidatedOptions, importDotenv } from '@nx-aws/core';
+import { getValidatedOptions, importDotenv } from '@neo-solution/nx-aws-core';
 import { loadEnvFromStack } from '../../utils/loadEnvFromStack';
 import { updateCloudFormationTemplate } from '../cloudformation/package/updateCloudFormationTemplate';
 import { loadCloudFormationTemplate } from '../../utils/load-cloud-formation-template';

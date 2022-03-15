@@ -12,7 +12,7 @@ const { projectPath } = yargs
     .parse();
 
 const srcPath = './dist/packages/**/*';
-const destPath = resolve(projectPath, 'node_modules', '@nx-aws');
+const destPath = resolve(projectPath, 'node_modules', '@neo-solution');
 
 console.log(`Copying files from ${srcPath} to ${destPath}`);
 

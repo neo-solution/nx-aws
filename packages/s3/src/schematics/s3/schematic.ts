@@ -76,7 +76,7 @@ export default function (options: S3SchematicSchema): Rule {
         })
         .targets.add({
           name: 'build',
-          builder: '@nx-aws/s3:build',
+          builder: '@neo-solution/nx-aws-s3:build',
         });
     }),
     addProjectToNxJsonInTree(normalizedOptions.projectName, {

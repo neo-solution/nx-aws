@@ -1,7 +1,7 @@
 import { BuilderContext } from '@angular-devkit/architect';
 import { JsonObject } from '@angular-devkit/core';
 import { underscore } from '@angular-devkit/core/src/utils/strings';
-import { ImportStackOutputs, OutputValueRetriever } from '@nx-aws/core';
+import { ImportStackOutputs, OutputValueRetriever } from '@neo-solution/nx-aws-core';
 import { IParameterOverrides } from '../builders/cloudformation/deploy/IParameterOverrides';
 import { loadCloudFormationTemplate } from './load-cloud-formation-template';
 
