@@ -103,7 +103,7 @@
     },
     "repository": "https://github.com/neo-solution/nx-aws",
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
+        "registry": "https://registry.npmjs.org/"
     },
     "engines": {
         "npm": "please-use-yarn",
