@@ -1,17 +1,16 @@
 {
     "name": "@neo-solution/nx-aws-core",
-    "description": "Core of @neo-solution/nx-aws",
-    "keywords": [
-        "AWS",
-        "Serverless",
-        "Angular CLI",
-        "Workspace",
-        "Nx",
-        "Monorepo"
-    ],
+    "version": "0.13.1",
+    "author": "julien.cummings-ross@neosolution.ca",
+    "description": "Core of @neo-solution/nx-aws-sam",
+    "license": "MIT",
     "main": "src/index.js",
-    "version": "0.13.0",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
+    },
+    "repository": {
+        "directory": "packages/core",
+        "type": "git",
+        "url": "https://github.com/neo-solution/nx-aws"
     }
 }

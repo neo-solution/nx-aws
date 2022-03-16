@@ -1,13 +1,29 @@
 {
     "name": "@neo-solution/nx-aws-sam",
-    "version": "0.13.0",
+    "version": "0.13.1",
+    "author": "julien.cummings-ross@neosolution.ca",
+    "description": "AWS SAM plugin for nx",
+    "keywords": [
+        "AWS",
+        "Serverless",
+        "Angular CLI",
+        "Workspace",
+        "Nx",
+        "Monorepo"
+    ],
+    "license": "MIT",
     "main": "src/index.js",
-    "schematics": "./collection.json",
     "builders": "./builders.json",
+    "schematics": "./collection.json",
     "dependencies": {
-        "@nrwl/node": "*"
+        "@nrwl/node": "12.6.5"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
+    },
+    "repository": {
+        "directory": "packages/sam",
+        "type": "git",
+        "url": "https://github.com/neo-solution/nx-aws"
     }
 }

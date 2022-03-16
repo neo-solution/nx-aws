@@ -1,19 +1,17 @@
 {
     "name": "@neo-solution/nx-aws-s3",
-    "version": "0.13.0",
-    "description": "AWS S3 plugin for nx - for deploying static resources to S3",
-    "keywords": [
-        "AWS",
-        "S3",
-        "Serverless",
-        "Angular CLI",
-        "Workspace",
-        "Nx",
-        "Monorepo"
-    ],
-    "schematics": "./collection.json",
+    "version": "0.13.1",
+    "author": "julien.cummings-ross@neosolution.ca",
+    "description": "AWS S3 plugin for nx",
+    "license": "MIT",
     "builders": "./builders.json",
+    "schematics": "./collection.json",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
+    },
+    "repository": {
+        "directory": "packages/s3",
+        "type": "git",
+        "url": "https://github.com/neo-solution/nx-aws"
     }
 }
