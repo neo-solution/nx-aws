@@ -69,7 +69,8 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npm pack dist/packages/nx-aws-core"
+                                "command": "npm pack dist/packages/nx-aws-core",
+                                "forwardAllArgs": false
                             }
                         ]
                     }
@@ -86,7 +87,8 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npm publish dist/packages/nx-aws-core --access public --tag $NPM_TAG"
+                                "command": "npm publish dist/packages/nx-aws-core --access public --tag $NPM_TAG",
+                                "forwardAllArgs": false
                             }
                         ]
                     }
@@ -161,7 +163,8 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npm pack dist/packages/nx-aws-s3"
+                                "command": "npm pack dist/packages/nx-aws-s3",
+                                "forwardAllArgs": false
                             }
                         ]
                     }
@@ -178,7 +181,8 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npm publish dist/packages/nx-aws-s3 --access public --tag $NPM_TAG"
+                                "command": "npm publish dist/packages/nx-aws-s3 --access public --tag $NPM_TAG",
+                                "forwardAllArgs": false
                             }
                         ]
                     }
@@ -269,7 +273,8 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npm pack dist/packages/nx-aws-sam"
+                                "command": "npm pack dist/packages/nx-aws-sam",
+                                "forwardAllArgs": false
                             }
                         ]
                     }
@@ -286,7 +291,8 @@
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npm publish dist/packages/nx-aws-sam --access public --tag $NPM_TAG"
+                                "command": "npm publish dist/packages/nx-aws-sam --access public --tag $NPM_TAG",
+                                "forwardAllArgs": false
                             }
                         ]
                     }
