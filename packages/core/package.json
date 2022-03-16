@@ -1,6 +1,6 @@
 {
     "name": "@neo-solution/nx-aws-core",
-    "version": "0.13.4",
+    "version": "0.13.5",
     "author": "julien.cummings-ross@neosolution.ca",
     "description": "Core of @neo-solution/nx-aws-sam",
     "license": "MIT",
