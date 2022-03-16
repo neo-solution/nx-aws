@@ -1,6 +1,6 @@
 {
     "name": "@neo-solution/nx-aws-sam",
-    "version": "0.13.3",
+    "version": "0.13.4",
     "author": "julien.cummings-ross@neosolution.ca",
     "description": "AWS SAM plugin for nx",
     "keywords": [
@@ -16,8 +16,8 @@
     "builders": "./builders.json",
     "schematics": "./collection.json",
     "dependencies": {
-        "@angular-devkit/build-webpack": "0.1102.1",
-        "@nrwl/node": "12.6.5"
+        "@angular-devkit/build-webpack": "^0.1202.16",
+        "@nrwl/node": "~12.6.5"
     },
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
