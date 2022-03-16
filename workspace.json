@@ -57,30 +57,36 @@
                     },
                     "outputs": ["{options.outputPath}"]
                 },
-                "publish": {
+                "pack": {
                     "builder": "@nrwl/workspace:run-commands",
+                    "dependsOn": [
+                        {
+                            "target": "build",
+                            "projects": "self"
+                        }
+                    ],
                     "options": {
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/core --destDir dist/packages/nx-aws-core"
-                            },
-                            {
-                                "command": "npm publish dist/packages/nx-aws-core --access public --tag $NPM_TAG"
+                                "command": "npm pack dist/packages/nx-aws-core"
                             }
                         ]
                     }
                 },
-                "pack": {
+                "publish": {
                     "builder": "@nrwl/workspace:run-commands",
+                    "dependsOn": [
+                        {
+                            "target": "build",
+                            "projects": "self"
+                        }
+                    ],
                     "options": {
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/core --destDir dist/packages/nx-aws-core"
-                            },
-                            {
-                                "command": "npm pack dist/packages/nx-aws-core"
+                                "command": "npm publish dist/packages/nx-aws-core --access public --tag $NPM_TAG"
                             }
                         ]
                     }
@@ -143,30 +149,36 @@
                     },
                     "outputs": ["{options.outputPath}"]
                 },
-                "publish": {
+                "pack": {
                     "builder": "@nrwl/workspace:run-commands",
+                    "dependsOn": [
+                        {
+                            "target": "build",
+                            "projects": "self"
+                        }
+                    ],
                     "options": {
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/s3 --destDir dist/packages/nx-aws-s3"
-                            },
-                            {
-                                "command": "npm publish dist/packages/nx-aws-s3 --access public --tag $NPM_TAG"
+                                "command": "npm pack dist/packages/nx-aws-s3"
                             }
                         ]
                     }
                 },
-                "pack": {
+                "publish": {
                     "builder": "@nrwl/workspace:run-commands",
+                    "dependsOn": [
+                        {
+                            "target": "build",
+                            "projects": "self"
+                        }
+                    ],
                     "options": {
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/s3 --destDir dist/packages/nx-aws-s3"
-                            },
-                            {
-                                "command": "npm pack dist/packages/nx-aws-s3"
+                                "command": "npm publish dist/packages/nx-aws-s3 --access public --tag $NPM_TAG"
                             }
                         ]
                     }
@@ -245,30 +257,36 @@
                     },
                     "outputs": ["{options.outputPath}"]
                 },
-                "publish": {
+                "pack": {
                     "builder": "@nrwl/workspace:run-commands",
+                    "dependsOn": [
+                        {
+                            "target": "build",
+                            "projects": "self"
+                        }
+                    ],
                     "options": {
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/sam --destDir dist/packages/nx-aws-sam"
-                            },
-                            {
-                                "command": "npm publish dist/packages/nx-aws-sam --access public --tag $NPM_TAG"
+                                "command": "npm pack dist/packages/nx-aws-sam"
                             }
                         ]
                     }
                 },
-                "pack": {
+                "publish": {
                     "builder": "@nrwl/workspace:run-commands",
+                    "dependsOn": [
+                        {
+                            "target": "build",
+                            "projects": "self"
+                        }
+                    ],
                     "options": {
                         "parallel": false,
                         "commands": [
                             {
-                                "command": "npx monorepo-package-tool --rootModuleDir packages/sam --destDir dist/packages/nx-aws-sam"
-                            },
-                            {
-                                "command": "npm pack dist/packages/nx-aws-sam"
+                                "command": "npm publish dist/packages/nx-aws-sam --access public --tag $NPM_TAG"
                             }
                         ]
                     }
