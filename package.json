@@ -40,7 +40,7 @@
         "help": "nx help",
         "workspace-generator": "nx workspace-generator"
     },
-    "author": "studds@fastmail.com",
+    "author": "julien.cummings-ross@neosolution",
     "license": "MIT",
     "dependencies": {
         "@angular-devkit/architect": "^0.1202.16",
