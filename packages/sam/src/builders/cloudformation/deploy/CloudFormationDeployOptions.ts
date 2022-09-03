@@ -3,6 +3,7 @@ import { IParameterOverrides } from './IParameterOverrides';
 export interface CloudFormationDeployOptions {
     parameterOverrides: IParameterOverrides;
     noFailOnEmptyChangeset: true;
+    profile: string | null;
     region: string | null;
     capabilities: Capability[] | null;
     templateFile: string;
